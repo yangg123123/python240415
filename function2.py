@@ -45,35 +45,35 @@ print( g(3,5) )
 print( (lambda  x:x*x)(3) )
 print( globals() )
 
-#재귀호출
-def factorial(x):
-    """이 함수는 팩토리얼 연산을
-       수행하는 함수입니다."""
-    if x == 1:
-        return 1 
-    return x * factorial(x-1)
-#호출
-print( factorial(3) )
-#print( help(factorial) )
-print( factorial.__doc__ )
+# #재귀호출
+# def factorial(x):
+#     """이 함수는 팩토리얼 연산을
+#        수행하는 함수입니다."""
+#     if x == 1:
+#         return 1 
+#     return x * factorial(x-1)
+# #호출
+# print( factorial(3) )
+# #print( help(factorial) )
+# print( factorial.__doc__ )
 
-#제너레이터 패턴 함수
-def reverse(data):
-    for index in range(len(data)-1, -1, -1):
-        yield data[index]
+# #제너레이터 패턴 함수
+# def reverse(data):
+#     for index in range(len(data)-1, -1, -1):
+#         yield data[index]
 
-#호출
-for char in reverse("abcde"):
-    print(char)
+# #호출
+# for char in reverse("abcde"):
+#     print(char)
 
-#잘못 코딩한 경우 
-def abc():
-    s = "abc"
-    for char in s:
-        yield char
+# #잘못 코딩한 경우 
+# def abc():
+#     s = "abc"
+#     for char in s:
+#         yield char
 
-for item in abc():
-    print(item)
+# for item in abc():
+#     print(item)
 
-lst = [1,2,3,4,5]
-print( tuple(i**2 for i in lst) )
+# lst = [1,2,3,4,5]
+# print( tuple(i**2 for i in lst) )

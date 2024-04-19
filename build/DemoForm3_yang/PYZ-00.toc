@@ -352,6 +352,9 @@
   ('soupsieve.util',
    'C:\\Python310\\lib\\site-packages\\soupsieve\\util.py',
    'PYMODULE'),
+  ('sqlite3', 'C:\\Python310\\lib\\sqlite3\\__init__.py', 'PYMODULE'),
+  ('sqlite3.dbapi2', 'C:\\Python310\\lib\\sqlite3\\dbapi2.py', 'PYMODULE'),
+  ('sqlite3.dump', 'C:\\Python310\\lib\\sqlite3\\dump.py', 'PYMODULE'),
   ('ssl', 'C:\\Python310\\lib\\ssl.py', 'PYMODULE'),
   ('statistics', 'C:\\Python310\\lib\\statistics.py', 'PYMODULE'),
   ('string', 'C:\\Python310\\lib\\string.py', 'PYMODULE'),
@@ -504,5 +507,6 @@
   ('xml.sax.xmlreader',
    'C:\\Python310\\lib\\xml\\sax\\xmlreader.py',
    'PYMODULE'),
+  ('yang_db1', 'C:\\work\\yang_db1.py', 'PYMODULE'),
   ('zipfile', 'C:\\Python310\\lib\\zipfile.py', 'PYMODULE'),
   ('zipimport', 'C:\\Python310\\lib\\zipimport.py', 'PYMODULE')])

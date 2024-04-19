@@ -13,9 +13,22 @@ import yang_db1
 
 
 # 디자인한 파일 로딩
-getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-os.path.join(base_path, relative_path)
+
+def resource_path(relative_path):
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    print('base_path', base_path)
+    print('relative_path',relative_path)
+    return os.path.join(base_path, relative_path)
+form = resource_path("DemoForm2.ui")
+print(form)
+
+# form_class = uic.loadUiType(form)[0]
+
 form_class = uic.loadUiType("DemoForm2.ui")[0]
+
+# base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# print(base_dir)
+# form_class = uic.loadUiType(f"{base_dir}work\DemoForm2.ui")[0]
 
 # 윈도우 클래서 정의
 class DemoForm(QMainWindow, form_class):
